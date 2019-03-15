@@ -1,0 +1,32 @@
+#GreetPageTitle{
+  color: black;
+  font-size: 40;
+  text-align: center;
+}
+
+
+#mainbuttonDiv{
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+#HomeButton{
+  font-size: 25;
+  background-color:blue;
+}
+
+#ProgressButton{
+  font-size: 25;
+  background-color:blue;
+}
+
+#LoginButton{
+  font-size: 25;
+  margin-top: 10px;
+  background-color: blue;
+}
+
+body{
+  background-color: lightblue;
+}

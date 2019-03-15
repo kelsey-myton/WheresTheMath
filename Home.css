@@ -1,0 +1,54 @@
+#HomePageTitle{
+  color: black;
+  font-size: 40;
+  text-align: center;
+}
+
+.wrapper
+{
+     text-align: center;
+     margin-top: 25px;
+}
+.GamingBox
+{
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: top;
+    background-color: green;
+    margin-right: 20px;
+
+}
+.BakingBox
+{
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+    display: inline-block;
+    max-width: 300px;
+    background-color: red;
+}
+@media screen and (max-width: 600px)
+{
+     .GamingBox, .BakingBox
+     {
+          max-width: 100%;
+     }
+}
+
+#GameButton{
+  font-weight: bold;
+}
+
+#BakingButton{
+  font-weight: bold;
+}
+
+#mainbuttonDiv{
+  margin-top: 20px;
+  text-align: center;
+}
+
+body{
+  background-color: lightblue;
+}
