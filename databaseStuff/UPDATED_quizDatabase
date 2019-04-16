@@ -1,0 +1,104 @@
+CREATE TABLE student_info (
+    user_id INT,
+    user_name VARCHAR(255) NOT NULL,
+    Num_Lessons_Compl_Alg INT,
+    Num_Lessons_Compl_Geom INT,
+    RecentLesson VARCHAR(255),
+    PRIMARY KEY (user_id)
+)
+
+INSERT INTO student_info (
+ user_id,
+ user_name,
+ Num_Lessons_Compl_Alg,
+ Num_Lessons_Compl_Geom,
+ RecentLesson)
+VALUES
+ (0,"Anthony",3,2,"Linear Programming")
+
+
+
+SELECT * FROM student_info
+/* This file path: /home/aintili/.dbeaver4/General/Scripts/Script.sql
+ * This database path: /home/aintili/.dbeaver4/.metadata/sample-database-sqlite-1/Chinook.db
+ * Also I'll leave this here
+ * DROP TABLE student_info
+ */
+
+CREATE TABLE Quizes(
+	id INT,
+	quiz_id INT,
+	quiz_name VARCHAR(255),
+	PRIMARY KEY (id),
+	FOREIGN KEY (quiz_id) REFERENCES questions(quiz_id)
+) 
+
+CREATE TABLE questions(
+	id INT,
+	quiz_id INT,
+	question_number INT,
+	question VARCHAR(255),
+	display_options VARCHAR(255),
+	answer VARCHAR(255)
+)   
+
+SELECT * from Quizes
+
+INSERT INTO Quizes (
+	id,
+	quiz_id,
+	quiz_name
+)
+
+VALUES (0, 1, "ALGEBRA_percent"), (1, 2, "ALGEBRA_quadratics");
+
+SELECT * from Quizes
+
+INSERT INTO questions (
+	id,
+	quiz_id,
+	question_number,
+	question,
+	display_options,
+	answer
+)
+
+VALUES (0, 1, 1, "What is the percentage representation of 0.5?", "a. 20% \nb. 50% \nc. 70% \nd. $\frac{20}{100}$", "b"), 
+(1, 1, 2,"If 25% of a pie is eaten what fraction was eaten?", "a. $\frac{1}{4}$ \nb. $\frac{1}{3}$ \nc. $\frac{1}{2}$ \nd. $\frac{1}{5}$", "a");
+
+INSERT INTO questions (
+	id,
+	quiz_id,
+	question_number,
+	question,
+	display_options,
+	answer
+)
+VALUES (2, 1, 3, "How many people are in the arena if 35% of it is filled and the capacity is 500?", "a. 130 \nb. 450 \nc. 175 \nd. 200", "c"),
+(3, 1, 4, "A software takes 1 minute to load and run. A new update makes it 10% faster! What is the run time now? (hint: 10% of 1 minute)", "a. 2 minutes \nb. 30 seconds \nc. 50 seconds \nd. 54 seconds", "d"),
+(4, 1, 5, "How many more cake pops did you start with if now 10 are eaten and that was 25% of the batch?", "a. 40 cakepops \nb. 35 cakepops \nc. 15 cakepops \nd. 25 cakepops", "a"),
+(5, 1, 6, "What number is 30% of 100?", "a. 70 \nb. 30 \nc. 100 \nd. 3", "b"),
+(6, 1, 7, "If  45% of my number is 9 what number am I thinking of?", "a. 20 \nb. 11 \nc. 55 \nd. 15", "a"),
+(7, 1, 8, "Sally has a big jar of change in his room. She has 600 coins in total, and 240 of them are pennies. What percent of the coins are pennies?", "a. 40% \nb. 14% \nc. 54% \n. 24%" , "a"),
+(8, 1, 9, "A baking recipe calls for 30% of a 50-gram chocolate bar. How much chocolate (in grams) do you need?", "a. 12g \nb. 30g \nc. 15g \nd. 35g", "c"),
+(9, 1, 10, "If you only use 3 of the 12 eggs, what percent of the eggs did you use?", "a. 20% \nb. 25% \nc. 36% \nd. 33%", "b");
+
+SELECT * from questions
+
+INSERT INTO questions (
+	id,
+	quiz_id,
+	question_number,
+	question,
+	display_options,
+	answer
+)
+VALUES (10, 2, 1, "If a ball is flying through the air following the trajectory $\frac{-1}{2}x^{2}$ + 10 how high off the ground \(in feet\) is the ball after 4 minutes? \(Assume x-axis is time in minutes and y-axis is height in feet\)
+", "a. 3 feet \nb. 8 feet \nc. 2 feet \nd. 10 feet", "c"),
+(11, 2, 2, "If your trajectory follows the equation $-x^{3}$ + 25x. Can you hit a bottle at \(2, 10\)? If not what value will y be when x = 2?", "a. Yes\nb. No y = 12 \nc. No y = 42 \nd. No y = 25", "c"),
+(12, 2, 3, "If a ball is flying through the air following the trajectory $-6x^{2}$ + 3x + 4, when does the ball hit the ground? \(Assume x-axis is time in minutes and y-axis is height in feet\)", "a. 1.5 minutes\nb. 3 minutes \nc. 6 minutes \nd. 2.5 minutes", "a"),
+(13, 2, 4, "If your trajectory follows the equation $\frac{-1}{2}x^{2}$. Can you hit a bottle at \(4, 4\)? If not what should the new equation be?", "a. Yes \nb. No y = $\frac{-1}{2}x^{2}$ + 4  \nc. No y = $\frac{-1}{2}x^{2}$ + 12\nd. No y = $\frac{-1}{2}x^{2}$ + 4x + 12 ", "c"),
+(14, 2, 5, "Is it possible for two objects to be on the same line on the y - axis \(ex. y = 4\) and intersect the equation y = $-x^{2}$ + 2x + 2? If so at what line?", "a. Yes at y = 2\nb. Yes at y = 1 \nc. Yes at y = 3\nd. No", "b"),
+(15, 2, 6, "Is it possible for three objects to be on the same line on the y - axis \(ex. y = 4\) and intersect the equation y = $-x^{2}$ + 3x + 2? If so at what line?", "a. Yes at y = 2\nb. Yes at y = 1 \nc. Yes at y = 3\nd. No", "d");
+
+SELECT * from questions
