@@ -1,0 +1,17 @@
+#subject{
+color: White;
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+
+}
+
+.interbutt{
+display:list-item;
+margin: 10px 10px;
+border: none;
+padding: 10px 50px;
+font-weight:normal;
+
+
+}
