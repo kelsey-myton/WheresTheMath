@@ -1,0 +1,19 @@
+#FormatMe{
+  width: 100%;
+}
+
+#other{
+  float:left;
+  text-align: left;
+}
+
+.Questions{
+  font-size: 15px;
+  text-align: left;
+  width:75%;
+  margin: auto;
+  margin-top: 20px;
+}
+.Options{
+  margin-top: 10px;
+}
