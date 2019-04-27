@@ -1,1 +1,0 @@
-public and src are client files ie files in a folder called client
