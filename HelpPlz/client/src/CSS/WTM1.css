@@ -1,0 +1,18 @@
+.subcontent{
+  height: 100%; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.content{
+}
+.headerDiv{
+  color: white;
+}
+
+#ptag{
+  font-size: 25px;
+}
