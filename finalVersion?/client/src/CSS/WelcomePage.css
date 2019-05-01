@@ -1,0 +1,46 @@
+#WelcomeTitleText{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0px 5px 7px rgba(0, 0, 0, 0.30);
+  padding: 50px;
+}
+
+#TheButtonsDiv{
+  text-align: center;
+}
+
+
+.WButtons {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 7px 20px;
+    font-size: 12px;
+    width: 90px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+  }
+
+
+#WelcomeTitleText{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0px 5px 7px rgba(0, 0, 0, 0.30);
+  padding: 50px;
+  font-family: "STONB___";
+}
+
+@font-face {
+  font-family:"STONB___" ;
+  src: url("fonts/STONB___.TTF");
+}

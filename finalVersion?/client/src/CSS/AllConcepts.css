@@ -1,0 +1,64 @@
+
+.interbutt{
+
+margin: 10px 10px;
+border: none;
+padding: 10px 50px;
+font-weight:normal;
+}
+.interbutt:hover{
+  cursor: pointer;
+}
+
+.subcontentConcepts{
+  height: 100%; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  padding: 20px;
+}
+
+.contentConecpts{
+}
+
+.column1Concepts{
+  background-color:#008080;
+  border: none;
+  color: white;
+
+  height: 180px;
+  width: 180px;
+
+  margin: 10px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.column2Concepts{
+  background-color: #008080;
+  border: none;
+  color: white;
+
+  height: 180px;
+  width: 180px;
+
+  margin: 10px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.Math{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.None{
+  list-style-type: none;
+}

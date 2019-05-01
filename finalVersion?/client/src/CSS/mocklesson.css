@@ -1,0 +1,73 @@
+
+.column1Mock {
+  float:left;
+  width: 50%;
+  background-color: white;
+}
+
+.column2Mock {
+  width: 50%;
+  background-color: white;
+}
+
+#leftText{
+  text-align: left;
+  font-size: 20px;
+}
+#NitPick{
+  text-align: left;
+}
+
+#test{
+  margin-left: 500px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#So{
+  color: red;
+}
+
+#ptag{
+  color:red;
+}
+
+#img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+#BuffMe{
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.subcontentMock{
+  height: 100%; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  background-color: white;
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.subcontentMockBottom{
+  height: 100%; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  background-color: white;
+  padding: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.content{
+}

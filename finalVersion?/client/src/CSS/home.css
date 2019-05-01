@@ -1,0 +1,57 @@
+#Header{
+position: absolute;
+top:0;
+right:0;
+}
+.interest_button{
+  /*#00b894*/
+  background-color:#008080;
+  border: none;
+  color: white;
+
+  height: 180px;
+  width: 180px;
+
+  margin: 10px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+}
+
+#bakingicon{
+  background: url('birthdaycake2.png');
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  height: 80px;
+  width: 80px;
+  margin: 20px 40px;
+  padding: 40px 40px;
+
+}
+
+#gamingicon{
+  background: url('gaming.png');
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  height: 80px;
+  width: 80px;
+  margin: 20px 40px;
+  padding: 40px 40px;
+
+}
+#comingicon{
+  background: url('hourglass.png');
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  height: 80px;
+  width: 80px;
+  margin: 20px 40px;
+  padding: 40px 40px;
+
+}
